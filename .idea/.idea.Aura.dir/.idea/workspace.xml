@@ -8,10 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="406ea190-e1e6-4e7c-b51f-e39102278316" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/Aura/ABP_Aura.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Input/IMC_AuraContext.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Input/InputActions/IA_Move.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aura.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Aura.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/Aura/BP_AuraCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/Aura/BP_AuraCharacter.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713524203546</updated>
-      <workItem from="1713524205915" duration="3204000" />
+      <workItem from="1713524205915" duration="4874000" />
     </task>
     <servers />
   </component>
