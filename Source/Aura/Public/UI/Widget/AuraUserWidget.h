@@ -16,6 +16,7 @@ class AURA_API UAuraUserWidget : public UUserWidget
 	GENERATED_BODY()
 
 public:
+	//We should associate setting the widget controller with calling widget controller set.
 	UFUNCTION(BlueprintCallable)
 	void SetWidgetController(UObject* InWidgetController);
 	
@@ -23,6 +24,7 @@ public:
 	TObjectPtr<UObject> WidgetController;
 
 protected:
+	// Whenever we set our widget controller for a given user widget, we're going to want to initialize the visuals.
 	UFUNCTION(BlueprintImplementableEvent)
 	void WidgetControllerSet();
 	

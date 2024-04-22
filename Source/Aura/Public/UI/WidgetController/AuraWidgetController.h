@@ -33,7 +33,8 @@ struct FWidgetControllerParams
 	TObjectPtr<UAttributeSet> AttributeSet = nullptr;
 };
 /**
- * 
+* A widget controller is going to be responsible for getting any data from the system, from
+* the model in this architecture. ability system component, our attribute set, our character, anything that really matters relating to our data.
  */
 UCLASS()
 class AURA_API UAuraWidgetController : public UObject
@@ -43,6 +44,10 @@ class AURA_API UAuraWidgetController : public UObject
 public:
 	UFUNCTION(BlueprintCallable, Category="Widget Controller")
 	void SetWidgetControllerParams(const FWidgetControllerParams& WidgetControllerParams);
+
+	// Any widget controller that inherits this function should be able to broadcast its own unique initial values.
+	virtual void BroadcastInitialValues(); 
+	
 protected:
 	
 	UPROPERTY(BlueprintReadOnly, Category="Widget Controller")
