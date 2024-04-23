@@ -46,7 +46,9 @@ public:
 	void SetWidgetControllerParams(const FWidgetControllerParams& WidgetControllerParams);
 
 	// Any widget controller that inherits this function should be able to broadcast its own unique initial values.
-	virtual void BroadcastInitialValues(); 
+	virtual void BroadcastInitialValues();
+
+	virtual void BindCallBacksToDependencies();
 	
 protected:
 	
