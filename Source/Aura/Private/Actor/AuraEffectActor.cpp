@@ -28,7 +28,7 @@ void AAuraEffectActor::ApplyGameplayEffectToTarget(AActor* TargetActor, TSubclas
 	//Apply Effect to Target ASC. Handles are basically wrappers that holds data.
 	FGameplayEffectContextHandle EffectContext = TargetAbilitySystemComponent->MakeEffectContext();
 	EffectContext.AddSourceObject(this);
-	const FGameplayEffectSpecHandle EffectSpec = TargetAbilitySystemComponent->MakeOutgoingSpec(GameplayEffectClass, 1.f, EffectContext);
+	const FGameplayEffectSpecHandle EffectSpec = TargetAbilitySystemComponent->MakeOutgoingSpec(GameplayEffectClass, ActorEffectLevel, EffectContext);
 	
 	const FActiveGameplayEffectHandle ActiveGameplayEffect = TargetAbilitySystemComponent->ApplyGameplayEffectSpecToSelf(*EffectSpec.Data);
 
